@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
+	public RuntimeAnimatorController attack;
+
+
 	// Use this for initialization
 	void Start () {
 		
