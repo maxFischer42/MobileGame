@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Motor : MonoBehaviour {
 
+	public PlatformerController Plat;
 	public virtualJoystick Joystick;
-	public Vector3 MoveVector;
 	public Rigidbody2D Rig;
+	public Vector3 MoveVector;
 	public float speed = 2.0f;
 
 	// Use this for initialization
@@ -25,11 +26,16 @@ public class Motor : MonoBehaviour {
 	{
 		Vector3 dir = Vector3.zero;
 		dir.x = Joystick.Horizontal ();
-		dir.y = Joystick.Vertical ();
 
 		if (dir.magnitude > 1)
 			dir.Normalize ();
 
+		if (dir.x > 0) {
+			Plat.direction = true;
+		} else if (dir.x < 0) {
+			Plat.direction = false;
+		}
+		dir = new Vector2 (dir.x, Plat.aaa.y);
 		return dir;
 
 

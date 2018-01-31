@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformerController : MonoBehaviour {
-
+	
+	public virtualJoystick Joystick;
 	public Rigidbody2D Rig;
 	public float speed;
 	public float jumpspeed;
 	public bool grounded;
 	public bool direction;
+	public bool jump;
+	public Vector2 aaa;
 
 	// Use this for initialization
 	void Start () {
@@ -18,22 +21,26 @@ public class PlatformerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		Vector2 vel = Rig.velocity;
-		float x = Input.GetAxis ("Horizontal");
-		vel = new Vector2 (x * speed, vel.y);
-		float y = Input.GetAxis ("Jump");
+		Vector3 dir = Vector3.zero;
+		dir.x = Joystick.Horizontal ();
+		//dir.y = Joystick.Vertical ();
 
-		if (x > 0) {
-			direction = true;
-		} else if (x < 0) {
-			direction = false;
-		}
 
-		if (y > 0 && grounded) {
-			vel = new Vector2 (vel.x, y * jumpspeed);
+		if (jump) {
+			dir = new Vector2 (dir.x, jumpspeed);
 			grounded = false;
+			jump = false;
 		}
+		aaa = dir;
+		Rig.velocity = dir;
+	}
 
-		Rig.velocity = vel;
+
+	public void JumpButton()
+	{
+		if (grounded) {
+			jump = true;
+			Debug.Log ("Jump");
+		}
 	}
 }
