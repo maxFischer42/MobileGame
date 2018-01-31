@@ -11,6 +11,7 @@ public class PlatformerController : MonoBehaviour {
 	public bool grounded;
 	public bool direction;
 	public bool jump;
+	public float moveSpeed = 5;
 	public Vector2 aaa;
 
 	// Use this for initialization
@@ -22,12 +23,14 @@ public class PlatformerController : MonoBehaviour {
 	void Update ()
 	{
 		Vector3 dir = Vector3.zero;
-		dir.x = Joystick.Horizontal ();
+		dir.y = Rig.velocity.y;
+		dir.x = Joystick.Horizontal () * moveSpeed;
 		//dir.y = Joystick.Vertical ();
 
 
 		if (jump) {
-			dir = new Vector2 (dir.x, jumpspeed);
+			Rig.AddForce (new Vector2 (0, jumpspeed));
+			//dir = new Vector2 (dir.x, jumpspeed);
 			grounded = false;
 			jump = false;
 		}

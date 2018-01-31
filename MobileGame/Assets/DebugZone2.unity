@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 88108787}
   - component: {fileID: 88108786}
   - component: {fileID: 88108788}
+  - component: {fileID: 88108789}
   m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
@@ -570,9 +571,27 @@ TilemapCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+--- !u!251 &88108789
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88108784}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &120924678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,8 +1283,8 @@ GameObject:
   - component: {fileID: 851883135}
   - component: {fileID: 851883131}
   m_Layer: 0
-  m_Name: New Sprite
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1284,7 +1303,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 15
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1329,10 +1348,11 @@ MonoBehaviour:
   Joystick: {fileID: 1139801804}
   Rig: {fileID: 851883129}
   speed: 0
-  jumpspeed: 15
+  jumpspeed: 500
   grounded: 0
   direction: 0
   jump: 0
+  moveSpeed: 5
   aaa: {x: 0, y: 0}
 --- !u!212 &851883132
 SpriteRenderer:
@@ -1419,7 +1439,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 851883128}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ec973f65cc2ad34a8adc3d0e7a6c48d, type: 3}
   m_Name: 
