@@ -33,11 +33,14 @@ public class BattleSystemBase : MonoBehaviour {
 	float timer;
 	public CalcDamage CD;
 
+	public string[] enemynames;
+
 
 	// Use this for initialization
 	void Start ()
 	{
 		StartBattle ();
+
 	}
 
 
@@ -65,19 +68,25 @@ public class BattleSystemBase : MonoBehaviour {
 				FocusAnim = enemies [0].gameObject.GetComponent<Animator> ();
 				break;
 			case 1:
-				target = enemies [0];
-				animTimer (getRandSkill(3));
-				FocusAnim = enemies [1].gameObject.GetComponent<Animator> ();
+				if (GameObject.Find(enemynames[turn])) {
+					target = enemies [0];
+					animTimer (getRandSkill (3));
+					FocusAnim = enemies [1].gameObject.GetComponent<Animator> ();
+				}
 				break;
 			case 2:
-				target = enemies [0];
-				animTimer (getRandSkill(3));
-				FocusAnim = enemies [2].gameObject.GetComponent<Animator> ();
+				if (GameObject.Find(enemynames[turn])) {
+					target = enemies [0];
+					animTimer (getRandSkill (3));
+					FocusAnim = enemies [2].gameObject.GetComponent<Animator> ();
+				}
 				break;
 			case 3:
+				if (GameObject.Find(enemynames[turn])) {
 				target = enemies [0];
 				animTimer (getRandSkill(3));
 				FocusAnim = enemies [3].gameObject.GetComponent<Animator> ();
+					}
 				break;
 
 			}
@@ -101,6 +110,10 @@ public class BattleSystemBase : MonoBehaviour {
 		BattleUI.enabled = true;
 		SkillBox.options.Clear();
 		AssignSkills (level);
+		enemynames = new string[enemies.Length];
+		for (int i = 0; i < enemies.Length; i++) {
+			enemynames [i] = enemies [i].gameObject.name;
+		}
 	}
 
 
@@ -120,8 +133,12 @@ public class BattleSystemBase : MonoBehaviour {
 		target.GetComponent<statHolder> ().HP = CD.DamageCalculator (target.GetComponent<statHolder> ().HP,
 			target.GetComponent<statHolder> ().DF, skill, enemies [0].gameObject.GetComponent<statHolder> ().HP,
 			enemies [0].gameObject.GetComponent<statHolder> ().MHP);
-		if (target.GetComponent<statHolder> ().HP >= 0){
+		if (target.GetComponent<statHolder> ().HP <= 0 && target.tag != "Player") {
 			Destroy (target);
+			Debug.Log ("they died");
+		}else if(target.GetComponent<statHolder> ().HP <= 0 &&target.tag == "Player"){
+			Debug.Log ("u died");
+			target.SetActive (false);
 		}
 		currentTurn++;
 		if(currentTurn > turn){

@@ -1534,7 +1534,7 @@ GameObject:
   - component: {fileID: 2016186876}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1646,6 +1646,7 @@ MonoBehaviour:
   - {fileID: 2016186867}
   - {fileID: 378983932}
   trgt: 1
+  targets: 1
   animationTimer:
   - 3
   - 3
@@ -1672,6 +1673,7 @@ MonoBehaviour:
   FocusAnim: {fileID: 0}
   currentTimer: 0
   CD: {fileID: 2016186874}
+  enemynames: []
 --- !u!114 &2016186873
 MonoBehaviour:
   m_ObjectHideFlags: 0
