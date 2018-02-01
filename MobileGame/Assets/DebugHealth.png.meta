@@ -1,22 +1,14 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 04bec4644e6ef9a41b78a325f0486df0
-timeCreated: 1517433799
+guid: 80d510d8eaf095246ab496e4f9b674d3
+timeCreated: 1517515903
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Character1_0
-    21300002: Character1_1
-    21300004: Character1_2
-    21300006: Character1_3
-    21300008: Character1_4
-=======
-guid: 87a368da12c7b9941b4b4afdcebf2b39
-timeCreated: 1517514691
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName: {}
->>>>>>> d41b7bad78394821b2086d7bc55344e06c2fbf8e
+    21300000: DebugHealth_0
+    21300002: DebugHealth_1
+    21300004: DebugHealth_2
+    21300006: DebugHealth_3
+    21300008: DebugHealth_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -53,21 +45,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> d41b7bad78394821b2086d7bc55344e06c2fbf8e
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<< HEAD
-  spritePixelsToUnits: 96
-=======
   spritePixelsToUnits: 100
->>>>>>> d41b7bad78394821b2086d7bc55344e06c2fbf8e
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -86,7 +70,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-<<<<<<< HEAD
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -100,7 +83,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character1_0
+      name: DebugHealth_0
       rect:
         serializedVersion: 2
         x: 0
@@ -114,7 +97,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character1_1
+      name: DebugHealth_1
       rect:
         serializedVersion: 2
         x: 96
@@ -128,7 +111,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character1_2
+      name: DebugHealth_2
       rect:
         serializedVersion: 2
         x: 0
@@ -142,7 +125,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character1_3
+      name: DebugHealth_3
       rect:
         serializedVersion: 2
         x: 96
@@ -156,7 +139,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Character1_4
+      name: DebugHealth_4
       rect:
         serializedVersion: 2
         x: 0
@@ -169,11 +152,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-=======
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
->>>>>>> d41b7bad78394821b2086d7bc55344e06c2fbf8e
     outline: []
     physicsShape: []
   spritePackingTag: 

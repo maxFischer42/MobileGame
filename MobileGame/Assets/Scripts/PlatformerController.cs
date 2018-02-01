@@ -26,7 +26,11 @@ public class PlatformerController : MonoBehaviour {
 		dir.y = Rig.velocity.y;
 		dir.x = Joystick.Horizontal () * moveSpeed;
 		//dir.y = Joystick.Vertical ();
-
+		if (dir.x > 0) {
+			direction = true;
+		} else if (dir.x < 0) {
+			direction = false;
+		}
 
 		if (jump) {
 			Rig.AddForce (new Vector2 (0, jumpspeed));
@@ -36,6 +40,8 @@ public class PlatformerController : MonoBehaviour {
 		}
 		aaa = dir;
 		Rig.velocity = dir;
+
+
 	}
 
 
