@@ -34,9 +34,9 @@ public class SwordBehavior : MonoBehaviour {
 				Right.SetActive (false);
 				Left.SetActive (false);
 				Plat.enabled = true;
+				Plat.jump = false;
 				attacking = false;
 				atkk = false;
-				Mot.enabled = true;
 			}
 		}
 
