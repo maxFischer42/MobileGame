@@ -4,7 +4,7 @@ using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
-public class EnemyMove : MonoBehaviour {
+public class EnemyChase : MonoBehaviour {
 
 	public GameObject player;
 	public float chaseSpeed = 2.0f;
@@ -29,6 +29,7 @@ public class EnemyMove : MonoBehaviour {
 			//player gets too close to the enemy
 			home = false;
 			chaseDirection.Normalize ();
+			chaseDirection = new Vector2 (chaseDirection.x, 0);
 			GetComponent<Rigidbody2D> ().velocity = chaseDirection * chaseSpeed;
 		} else if (home == false) {
 			Vector2 homeDirection = new Vector2 (startPosition.x - transform.position.x,
@@ -40,6 +41,7 @@ public class EnemyMove : MonoBehaviour {
 			} else {
 				//go home
 				homeDirection.Normalize ();
+				homeDirection = new Vector2 (homeDirection.x, 0);
 				GetComponent<Rigidbody2D> ().velocity = homeDirection * chaseSpeed;
 			}
 		} else {
@@ -50,6 +52,7 @@ public class EnemyMove : MonoBehaviour {
 				paceDirection = -displacement;
 			}
 			paceDirection.Normalize ();
+			paceDirection = new Vector2 (paceDirection.x, 0);
 			GetComponent<Rigidbody2D> ().velocity = paceDirection * chaseSpeed;
 		}
 	}

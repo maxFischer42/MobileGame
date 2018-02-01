@@ -10,10 +10,6 @@ public class Motor : MonoBehaviour {
 	public Vector3 MoveVector;
 	public float speed = 2.0f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {
