@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: a82a02a7b769154419de11c037612a94
-timeCreated: 1517520260
+guid: 1a1a19480de4f1b4f8d21e54fbe7760a
+timeCreated: 1517521486
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Wall1_0
-    21300002: Wall1_1
+    21300000: New Piskel (1)_0
+    21300002: New Piskel (1)_1
+    21300004: New Piskel (1)_2
+    21300006: New Piskel (1)_3
+    21300008: New Piskel (1)_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -24,7 +27,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 1
+  isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -48,7 +51,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 96
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -80,7 +83,35 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wall1_0
+      name: New Piskel (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: New Piskel (1)_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: New Piskel (1)_2
       rect:
         serializedVersion: 2
         x: 0
@@ -94,7 +125,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Wall1_1
+      name: New Piskel (1)_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: New Piskel (1)_4
       rect:
         serializedVersion: 2
         x: 0
