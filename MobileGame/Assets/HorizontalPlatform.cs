@@ -4,13 +4,30 @@ using UnityEngine;
 
 public class HorizontalPlatform : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	public float multiplier = -60f;
+
+
+
+	void OnCollisionEnter2D(Collision2D Coll)
+	{
+		if (Coll.gameObject.tag == "Player") {
+			Coll.transform.SetParent (transform);
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
 		
+	void OnCollisionStay2D(Collision2D Coll)
+	{
+		if (Coll.gameObject.tag == "Player") {
+			Coll.gameObject.GetComponent<Rigidbody2D>().AddForce(GetComponent<MovingPlatform>().Direction * multiplier);
+
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D Coll)
+	{
+		
+		if (Coll.gameObject.tag == "Player") {
+			Coll.transform.SetParent (null);
+		}
 	}
 }

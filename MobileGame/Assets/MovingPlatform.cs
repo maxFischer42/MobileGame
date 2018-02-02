@@ -25,6 +25,10 @@ public class MovingPlatform : MonoBehaviour {
 			Direction *= -1;
 			rig.velocity = new Vector2 (Direction.x * speed, Direction.y * speed);
 			timer = 0;
+		/*	if (gameObject.GetComponent<HorizontalPlatform> ())
+			{
+				GetComponent<HorizontalPlatform> ().multiplier *= -1;
+			}*/
 		}
 	}
 }
