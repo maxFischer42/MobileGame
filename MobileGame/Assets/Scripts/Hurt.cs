@@ -23,6 +23,8 @@ public class Hurt : MonoBehaviour {
 		timer += Time.deltaTime;
 		if (isPlayer != true && HP <= 0) {
 			Destroy (gameObject, timeUntilDestroy);
+		} else if(isPlayer && HP <= 0) {
+			GameObject.Find ("DZ").gameObject.GetComponent<DeadZone> ().kill ();
 		}
 		if (invinsible && timer > 1f) {
 			timer = 0;

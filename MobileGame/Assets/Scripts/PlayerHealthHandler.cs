@@ -22,6 +22,7 @@ public class PlayerHealthHandler : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+		GetComponent<Hurt> ().HP = hP;
 		switch (hP) {
 		case 8:
 			Containers [0].sprite = Hearts [0];
