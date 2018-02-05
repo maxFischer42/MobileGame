@@ -9,6 +9,7 @@ public class Portal : MonoBehaviour {
 	public bool active;
 	float timer;
 	public string Loadlevel;
+	public GameObject aaa;
 	// Update is called once per frame
 	void Update () {
 		if (active) {
@@ -30,6 +31,7 @@ public class Portal : MonoBehaviour {
 
 	void EndLevel()
 	{
+		DontDestroyOnLoad(aaa);
 		Part.Play ();
 		active = true;
 	}
