@@ -7,38 +7,22 @@ public class BucketButton : MonoBehaviour {
 	public float multiplier = 2.0f;
 	public int direction;
 	public BoxCollider2D Box;
-	public bool offsetting;
-	public Transform trans;
-	public Vector2 Origin;
+
 
 	//0 = up 1 = down
 	//2 = left 3 = right
 
-	void Start()
-	{
-		Origin = trans.position;
-	}
-
-
-	void Update()
-	{
-		if (offsetting) {
-			trans.SetPositionAndRotation(Origin, Quaternion.identity);
-			trans.SetPositionAndRotation (new Vector2 (Origin.x, Origin.y - 0.5f), Quaternion.identity);
 
 
 
-		} else {
-			Box.offset = new Vector2(0, 0);
-			trans.SetPositionAndRotation(Origin,Quaternion.identity);
-		}
-	}
 
 
 	void OnTriggerEnter2D(Collider2D Coll)
 	{
-		offsetting = true;
+		//BucketCam.SetActive (true);
+		//MainCam.SetActive (false);
 		if (Coll.gameObject.name == "Feet") {
+
 			switch (direction) {
 			case 0:
 				Buck.Up (multiplier);
@@ -78,8 +62,8 @@ public class BucketButton : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D Coll)
 	{
-		offsetting = false;
-
+		//MainCam.SetActive (true);
+		//BucketCam.SetActive (false);
 	}
 
 

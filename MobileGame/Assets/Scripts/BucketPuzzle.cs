@@ -9,21 +9,21 @@ public class BucketPuzzle : MonoBehaviour {
 
 	public void Up(float multiplier)
 	{
-		Box.velocity =  (new Vector2 (0, multiplier));
+		Box.AddForce(new Vector2 (0, multiplier));
 	}
 
 	public void Down(float multiplier)
 	{
-		Box.velocity = (new Vector2 (0, multiplier * -1));
+		Box.AddForce(new Vector2 (0, multiplier * -1));
 	}
 
 	public void Left(float multiplier)
 	{
-		Box.velocity = (new Vector2 (multiplier * -1,0));
+		Box.AddForce(new Vector2 (multiplier * -1,0));
 	}
 
 	public void Right(float multiplier)
 	{
-		Box.velocity = (new Vector2 (multiplier,0));
+		Box.AddForce(new Vector2 (multiplier,0));
 	}
 }
