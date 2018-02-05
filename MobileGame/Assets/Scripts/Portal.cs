@@ -24,14 +24,14 @@ public class Portal : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D Coll)
 	{
 		if (Coll.gameObject.tag == "Player") {
-			Part = Coll.transform.GetComponentInChildren<ParticleSystem> ();
+			Part = GameObject.Find ("Particle System").GetComponent<ParticleSystem> ();
+			Coll.GetComponent<Rigidbody2D> ().bodyType = RigidbodyType2D.Static;
 			EndLevel ();
 		}
 	}
 
 	void EndLevel()
 	{
-		DontDestroyOnLoad(aaa);
 		Part.Play ();
 		active = true;
 	}

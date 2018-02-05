@@ -32,7 +32,7 @@ public class DeadZone : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D Coll)
 	{
 		if (Coll.gameObject.tag == "Player") {
-			Part = Coll.gameObject.GetComponentInChildren<ParticleSystem> ();
+			Part = GameObject.Find ("Particle System").GetComponent<ParticleSystem> ();
 			par = Coll.gameObject.transform;
 			Rig = Coll.gameObject.GetComponent<Rigidbody2D> ();
 			Rig.bodyType = RigidbodyType2D.Static;
@@ -46,7 +46,7 @@ public class DeadZone : MonoBehaviour {
 	public void kill()
 	{
 			GameObject Coll = GameObject.Find ("Player");
-			Part = Coll.gameObject.GetComponentInChildren<ParticleSystem> ();
+		Part = GameObject.Find ("Particle System").GetComponent<ParticleSystem> ();
 			par = Coll.gameObject.transform;
 			Rig = Coll.gameObject.GetComponent<Rigidbody2D> ();
 			Rig.bodyType = RigidbodyType2D.Static;
