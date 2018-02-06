@@ -24,7 +24,7 @@ public class Portal : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D Coll)
 	{
 		if (Coll.gameObject.tag == "Player") {
-			Part = GameObject.Find ("Particle System").GetComponent<ParticleSystem> ();
+			//Part = GameObject.Find ("Particle System").GetComponent<ParticleSystem> ();
 			Coll.GetComponent<Rigidbody2D> ().bodyType = RigidbodyType2D.Static;
 			EndLevel ();
 		}

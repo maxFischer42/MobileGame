@@ -24,9 +24,10 @@ public class ChangeCamera : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D Coll)
 	{
 			if(Coll.gameObject.tag == "Player"){
+			Coll.gameObject.GetComponent<PlatformerController> ().Joystick = old;
 		MainCam.SetActive (true);
 		BucketCam.SetActive (false);
-			Coll.gameObject.GetComponent<PlatformerController> ().Joystick = old;
+
 			}
 
 	}
