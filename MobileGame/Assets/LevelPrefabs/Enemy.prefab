@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 61819244838541326}
   - component: {fileID: 114884391495146360}
   - component: {fileID: 114344280056182672}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: DMG
   m_Icon: {fileID: 0}

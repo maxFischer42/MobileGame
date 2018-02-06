@@ -12,6 +12,7 @@ public class communicatePlat : MonoBehaviour {
 	public void OnCollisionEnter2D(Collision2D Coll)
 	{
 		if (Coll.gameObject.name == "Feet") {
+			Debug.Log ("Communicating");
 			if (ball != true) {
 				switch (left) {
 				case true:

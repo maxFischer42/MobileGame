@@ -26,11 +26,18 @@ public class SpringBoard : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D Coll){
-		
-			Rig = Coll.transform.parent.GetComponent<Rigidbody2D>();
+		if (Coll.gameObject.name == "Feet") {
+			Rig = Coll.transform.parent.GetComponent<Rigidbody2D> ();
 			colliding = true;
 			Spring.enabled = true;
 			colliding = true;
+		} else if(Coll.gameObject.layer != 9){
+			Rig = Coll.gameObject.GetComponent<Rigidbody2D> ();
+			colliding = true;
+			Spring.enabled = true;
+			colliding = true;
+		}
+			
 		
 	}
 

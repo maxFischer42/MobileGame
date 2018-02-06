@@ -15,11 +15,11 @@ public class MovePlatform : MonoBehaviour {
 
 
 	public void Left(){
-		Platform.AddForce(new Vector2(-1 * multiplierX, -1 * multiplierY));
+		Platform.velocity = (new Vector2(-1 * multiplierX, -1 * multiplierY));
 			}
 
 	public void Right(){
-		Platform.AddForce(new Vector2(multiplierX, multiplierY));
+		Platform.velocity = (new Vector2(multiplierX, multiplierY));
 	}
 
 	public void newBall()
