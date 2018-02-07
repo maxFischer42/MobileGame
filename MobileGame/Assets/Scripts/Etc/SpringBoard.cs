@@ -11,6 +11,7 @@ public class SpringBoard : MonoBehaviour {
 	float timer;
 	public Rigidbody2D Rig;
 	public Vector2 directionSpeed;
+	public float horizontalPush;
 
 	
 	// Update is called once per frame
@@ -18,6 +19,7 @@ public class SpringBoard : MonoBehaviour {
 		if (colliding) {
 			timer += Time.deltaTime;
 			if (timer > 0.15) {
+				Rig.velocity = new Vector2 (horizontalPush, Rig.velocity.y);
 				Rig.AddForce (directionSpeed);
 				timer = 0;
 			}
