@@ -11784,6 +11784,11 @@ Prefab:
       propertyPath: Loadlevel
       value: Level3
       objectReference: {fileID: 0}
+    - target: {fileID: 114579724037034834, guid: ce4f170572f82a54a89acc40ecc8a05d,
+        type: 2}
+      propertyPath: Part
+      value: 
+      objectReference: {fileID: 1976795007}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce4f170572f82a54a89acc40ecc8a05d, type: 2}
   m_IsPrefabParent: 0
@@ -20906,6 +20911,38 @@ Prefab:
       propertyPath: old
       value: 
       objectReference: {fileID: 306883405}
+    - target: {fileID: 4917335186536852, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352862342152100, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421820617892770, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 61423641597950252, guid: a6121b22e45dc0c468a1c07c6c41512a,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -1.3064289
+      objectReference: {fileID: 0}
+    - target: {fileID: 61423641597950252, guid: a6121b22e45dc0c468a1c07c6c41512a,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 6.062702
+      objectReference: {fileID: 0}
+    - target: {fileID: 61423641597950252, guid: a6121b22e45dc0c468a1c07c6c41512a,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.15559721
+      objectReference: {fileID: 0}
+    - target: {fileID: 61423641597950252, guid: a6121b22e45dc0c468a1c07c6c41512a,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 3.2096586
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
   m_IsPrefabParent: 0
@@ -21718,6 +21755,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eafdaca101e17d44cb81edd5cd49a755, type: 2}
   m_IsPrefabParent: 0
+--- !u!198 &1976795007 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198898389002084498, guid: eafdaca101e17d44cb81edd5cd49a755,
+    type: 2}
+  m_PrefabInternal: {fileID: 1976795006}
 --- !u!1 &2122024768
 GameObject:
   m_ObjectHideFlags: 0
