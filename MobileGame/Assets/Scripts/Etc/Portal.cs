@@ -26,6 +26,7 @@ public class Portal : MonoBehaviour {
 		if (Coll.gameObject.tag == "Player") {
 			//Part = GameObject.Find ("Particle System").GetComponent<ParticleSystem> ();
 			Coll.GetComponent<Rigidbody2D> ().bodyType = RigidbodyType2D.Static;
+			Part.GetComponent<ParticleEffectScript> ().loading = true;
 			EndLevel ();
 		}
 	}

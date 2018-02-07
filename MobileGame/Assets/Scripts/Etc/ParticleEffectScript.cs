@@ -5,6 +5,7 @@ using UnityEngine;
 public class ParticleEffectScript : MonoBehaviour {
 
 	public bool active;
+	public bool loading = false;
 	float timer;
 
 
@@ -23,8 +24,12 @@ public class ParticleEffectScript : MonoBehaviour {
 			if (timer > 4) {
 				transform.SetPositionAndRotation (GameObject.Find ("Player").gameObject.transform.position, Quaternion.identity);
 				GetComponent<ParticleSystem> ().Stop ();
+				if (loading != true) {
+					timer = 0;
+					active = false;
+				}
 			}
-			if (timer > 7) {
+			if (timer > 7 && loading) {
 				Destroy (gameObject, 2);
 			}
 		}

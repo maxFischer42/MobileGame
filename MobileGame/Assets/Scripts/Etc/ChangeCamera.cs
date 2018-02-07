@@ -8,7 +8,7 @@ public class ChangeCamera : MonoBehaviour {
 	public GameObject MainCam;
 
 	public virtualJoystick old;
-	public virtualJoystick newe;
+	public Canvas can;
 
 
 
@@ -17,14 +17,14 @@ public class ChangeCamera : MonoBehaviour {
 		if (Coll.gameObject.tag == "Player") {
 			BucketCam.SetActive (true);
 			MainCam.SetActive (false);
-			Coll.gameObject.GetComponent<PlatformerController> ().Joystick = newe;
+			can.worldCamera = BucketCam.GetComponent<Camera>();
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D Coll)
 	{
 			if(Coll.gameObject.tag == "Player"){
-			Coll.gameObject.GetComponent<PlatformerController> ().Joystick = old;
+			can.worldCamera = MainCam.GetComponent<Camera>();
 		MainCam.SetActive (true);
 		BucketCam.SetActive (false);
 
