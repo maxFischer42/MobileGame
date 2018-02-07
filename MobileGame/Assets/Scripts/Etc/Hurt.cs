@@ -46,6 +46,9 @@ public class Hurt : MonoBehaviour {
 				break;
 			}
 		}
+		else if (Coll.gameObject.tag == "Lava" && isPlayer) {
+			GameObject.Find ("DZ").GetComponent<DeadZone> ().kill ();
+		}
 	}
 
 
@@ -53,7 +56,7 @@ public class Hurt : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D Coll)
 	{
 		if (Coll.gameObject.tag == weakness && invinsible != true) {
-			gameObject.GetComponent<Rigidbody2D> ().AddForce(new Vector2 (Random.Range(-10,10),Random.Range(-10,10)));
+			gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (Random.Range (-10, 10), Random.Range (-10, 10)));
 			invinsible = true;
 			switch (isPlayer) {
 			case true:
@@ -63,6 +66,8 @@ public class Hurt : MonoBehaviour {
 				HP -= 1;
 				break;
 			}
-		}
+		} 
 	}
+
+
 }

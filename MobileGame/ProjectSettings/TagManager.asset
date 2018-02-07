@@ -7,6 +7,7 @@ TagManager:
   - SwordBox
   - DMG
   - Pebble
+  - Lava
   layers:
   - Default
   - TransparentFX
