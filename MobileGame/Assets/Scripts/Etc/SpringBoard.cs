@@ -20,7 +20,7 @@ public class SpringBoard : MonoBehaviour {
 			timer += Time.deltaTime;
 			if (timer > 0.15) {
 				Rig.velocity = new Vector2 (horizontalPush, Rig.velocity.y);
-				Rig.AddForce (directionSpeed);
+				Rig.AddForce (directionSpeed * Rig.gravityScale);
 				timer = 0;
 			}
 		}
