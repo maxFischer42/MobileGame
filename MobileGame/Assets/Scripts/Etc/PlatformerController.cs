@@ -33,7 +33,13 @@ public class PlatformerController : MonoBehaviour {
 		}
 
 		if (jump) {
-			Rig.AddForce (new Vector2 (0, jumpspeed * (Rig.gravityScale / 3)));
+			
+			if (Rig.gravityScale > 0) {
+				Rig.AddForce (new Vector2 (0, jumpspeed));
+			}else{
+				Rig.AddForce (new Vector2 (0, jumpspeed * -1));
+			}
+
 			//dir = new Vector2 (dir.x, jumpspeed);
 			grounded = false;
 			jump = false;
