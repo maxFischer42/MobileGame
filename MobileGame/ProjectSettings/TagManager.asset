@@ -8,6 +8,8 @@ TagManager:
   - DMG
   - Pebble
   - Lava
+  - Bucket
+  - Platform
   layers:
   - Default
   - TransparentFX
