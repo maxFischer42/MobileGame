@@ -20897,6 +20897,11 @@ Prefab:
       propertyPath: m_Size.y
       value: 3.2096586
       objectReference: {fileID: 0}
+    - target: {fileID: 114697298431442060, guid: a6121b22e45dc0c468a1c07c6c41512a,
+        type: 2}
+      propertyPath: can
+      value: 
+      objectReference: {fileID: 1729690539}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
   m_IsPrefabParent: 0
@@ -21212,6 +21217,11 @@ Camera:
   m_PrefabParentObject: {fileID: 20127335660724676, guid: f047dc0c01f054246a5237dc57d672d8,
     type: 2}
   m_PrefabInternal: {fileID: 329295739}
+--- !u!223 &1729690539 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223097746804614764, guid: 95137cdab4fcf1d4089aec800d7f2264,
+    type: 2}
+  m_PrefabInternal: {fileID: 1506322650}
 --- !u!1001 &1737470253
 Prefab:
   m_ObjectHideFlags: 0

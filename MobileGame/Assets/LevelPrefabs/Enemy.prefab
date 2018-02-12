@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 61819244838541326}
   - component: {fileID: 114884391495146360}
   - component: {fileID: 114344280056182672}
+  - component: {fileID: 95398554364151474}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: DMG
@@ -69,8 +70,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1425562141081678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.35, y: 0.058098316, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -22.865454, y: 15.970038, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4497453029936330}
   m_Father: {fileID: 0}
@@ -108,18 +109,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0037608668, y: -0.04011606}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.24531369, y: 0.23277786}
   m_EdgeRadius: 0
 --- !u!61 &61866927797693448
 BoxCollider2D:
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00747633, y: -0.14709389}
+  m_Offset: {x: -0.0062225163, y: -0.0016724616}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -144,8 +145,25 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.93607616, y: 0.91747963}
+  m_Size: {x: 0.29672432, y: 0.26057664}
   m_EdgeRadius: 0
+--- !u!95 &95398554364151474
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1425562141081678}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1ddf88513e2b81a4ba98efc32ed99b4d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114344280056182672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -270,8 +288,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4eff3a69745f09b418657727e9570db1, type: 3}
-  m_Color: {r: 0.27352926, g: 0.113970585, b: 0.9117647, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f1fa7a447cd54104c9a69d4e046bd5be, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
