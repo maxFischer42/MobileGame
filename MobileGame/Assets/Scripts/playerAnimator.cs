@@ -34,12 +34,10 @@ public class playerAnimator : MonoBehaviour {
 			Sprt.flipX = true;
 		}
 		x = Mathf.Abs (x);
-		if (x > 1) {
+		if (x > 1 && sword.attacking != true) {
 			Anim.enabled = true;
 
-			if (sword.attacking) {
-				Anim.runtimeAnimatorController = Attack;
-			}else 
+
 				if (sword.attacking != true) {
 					Anim.runtimeAnimatorController = Move;
 				}
@@ -47,7 +45,10 @@ public class playerAnimator : MonoBehaviour {
 			Anim.enabled = false;
 
 		}
-
+		if (sword.attacking) {
+			Anim.enabled = true;
+			Anim.runtimeAnimatorController = Attack;
+		}
 
 	}
 }
