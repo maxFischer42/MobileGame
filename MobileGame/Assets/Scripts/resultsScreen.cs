@@ -22,7 +22,7 @@ public class resultsScreen : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-		//gemAmount = PlayerPrefs.GetInt ("Gems");
+		gemAmount = PlayerPrefs.GetInt ("Gems");
 		deathCounter = PlayerPrefs.GetInt ("Deaths");
 		killCounter = PlayerPrefs.GetInt ("Kills");
 		scoreTotal = calcScore (gemAmount, killCounter, deathCounter);
@@ -43,7 +43,7 @@ public class resultsScreen : MonoBehaviour {
 			partStart = true;
 			part.Play ();
 		}
-		if (part.time > 4 && timer > 4.0f && resultDisplay != true) {
+		if (timer > 4.0f && resultDisplay != true) {
 			timer = part.time;
 			resultDisplay = true;
 			statDisplay.enabled = true;
