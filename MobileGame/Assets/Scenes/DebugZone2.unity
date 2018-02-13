@@ -8939,6 +8939,11 @@ Prefab:
       propertyPath: Joystick
       value: 
       objectReference: {fileID: 1139801804}
+    - target: {fileID: 114039069143956668, guid: 053b01d1c561c4f4ab3e1c755ba96de7,
+        type: 2}
+      propertyPath: attacklength
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 053b01d1c561c4f4ab3e1c755ba96de7, type: 2}
   m_IsPrefabParent: 0

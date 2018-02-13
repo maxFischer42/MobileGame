@@ -110783,8 +110783,8 @@ GameObject:
   - component: {fileID: 1566809634}
   - component: {fileID: 1566809631}
   - component: {fileID: 1566809630}
-  - component: {fileID: 1566809633}
   - component: {fileID: 1566809632}
+  - component: {fileID: 1566809633}
   m_Layer: 9
   m_Name: Bucket
   m_TagString: Untagged
@@ -110838,11 +110838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7a92975acb8f148978049c2adee118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &1566809633
-PolygonCollider2D:
+--- !u!61 &1566809633
+BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 60510272236221068, guid: a6121b22e45dc0c468a1c07c6c41512a,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566809629}
   m_Enabled: 1
@@ -110861,19 +110860,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.7, y: 0.96}
-      - {x: 0.58, y: 0.84}
-      - {x: 0.38, y: -0.44}
-      - {x: -0.35999998, y: -0.42999998}
-      - {x: -0.41, y: 0.04}
-      - {x: -0.56, y: 0.84999996}
-      - {x: -0.66999996, y: 0.96}
-      - {x: -0.96, y: 0.96}
-      - {x: -0.96, y: -0.96}
-      - {x: 0.96, y: -0.96}
-      - {x: 0.96, y: 0.96}
+  serializedVersion: 2
+  m_Size: {x: 1.92, y: 1.92}
+  m_EdgeRadius: 0
 --- !u!212 &1566809634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -113344,6 +113333,11 @@ Prefab:
       propertyPath: Joystick
       value: 
       objectReference: {fileID: 1627713931}
+    - target: {fileID: 114039069143956668, guid: 053b01d1c561c4f4ab3e1c755ba96de7,
+        type: 2}
+      propertyPath: attacklength
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 053b01d1c561c4f4ab3e1c755ba96de7, type: 2}
   m_IsPrefabParent: 0
