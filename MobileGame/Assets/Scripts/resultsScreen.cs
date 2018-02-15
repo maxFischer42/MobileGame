@@ -25,6 +25,15 @@ public class resultsScreen : MonoBehaviour {
 		gemAmount = PlayerPrefs.GetInt ("Gems");
 		deathCounter = PlayerPrefs.GetInt ("Deaths");
 		killCounter = PlayerPrefs.GetInt ("Kills");
+
+		if (gemAmount == 10 && PlayerPrefs.GetInt ("Difficulty") == 0) {
+			PlayerPrefs.SetInt ("Difficulty", 1);
+		}
+		if (gemAmount == 20 && PlayerPrefs.GetInt ("Difficulty") == 1) {
+			PlayerPrefs.SetInt ("Difficulty", 2);
+		}
+
+
 		scoreTotal = calcScore (gemAmount, killCounter, deathCounter);
 
 		for (int i = 0; i < stats.Length; i++) {

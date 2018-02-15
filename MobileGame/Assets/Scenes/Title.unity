@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: DebugZone2
+  diff: 2
 --- !u!1 &128250343
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: med1
+  diff: 1
 --- !u!1 &808744946
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: easy1
+  diff: 0
 --- !u!1 &1029092903
 GameObject:
   m_ObjectHideFlags: 0

@@ -45,6 +45,9 @@ public class DeadZone : MonoBehaviour {
 			Rig.bodyType = RigidbodyType2D.Static;
 			active = true;
 			Coll.GetComponent<PlayerHealthHandler> ().hP = Coll.GetComponent<PlayerHealthHandler> ().mHP;
+			int i = PlayerPrefs.GetInt ("Deaths");
+			i++;
+			PlayerPrefs.SetInt ("Deaths", i);
 			Part.Play ();
 	}
 
