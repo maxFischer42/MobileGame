@@ -113189,31 +113189,21 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 223097746804614764, guid: 95137cdab4fcf1d4089aec800d7f2264,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1063306803}
-    - target: {fileID: 114849973506553786, guid: 95137cdab4fcf1d4089aec800d7f2264,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 737490059}
-    - target: {fileID: 114849973506553786, guid: 95137cdab4fcf1d4089aec800d7f2264,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: JumpButton
-      objectReference: {fileID: 0}
     - target: {fileID: 114008274337101958, guid: 95137cdab4fcf1d4089aec800d7f2264,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 737490061}
-    - target: {fileID: 114008274337101958, guid: 95137cdab4fcf1d4089aec800d7f2264,
+    - target: {fileID: 114849973506553786, guid: 95137cdab4fcf1d4089aec800d7f2264,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Attack
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 737490059}
+    - target: {fileID: 223097746804614764, guid: 95137cdab4fcf1d4089aec800d7f2264,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1063306803}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95137cdab4fcf1d4089aec800d7f2264, type: 2}
   m_IsPrefabParent: 0

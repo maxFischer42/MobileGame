@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 16250369}
   - component: {fileID: 16250368}
   - component: {fileID: 16250367}
+  - component: {fileID: 16250370}
   m_Layer: 5
   m_Name: hard
   m_TagString: Untagged
@@ -188,7 +189,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 16250368}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 16250370}
+        m_MethodName: press
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &16250368
@@ -224,6 +236,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 16250365}
+--- !u!114 &16250370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 16250365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17639fd484c563e48bc59cbfe4911a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: DebugZone2
 --- !u!1 &128250343
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +469,7 @@ GameObject:
   - component: {fileID: 680753791}
   - component: {fileID: 680753790}
   - component: {fileID: 680753789}
+  - component: {fileID: 680753792}
   m_Layer: 5
   m_Name: medium
   m_TagString: Untagged
@@ -509,7 +534,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 680753790}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 680753792}
+        m_MethodName: press
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &680753790
@@ -545,6 +581,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 680753787}
+--- !u!114 &680753792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 680753787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17639fd484c563e48bc59cbfe4911a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: med1
 --- !u!1 &808744946
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +604,7 @@ GameObject:
   - component: {fileID: 808744950}
   - component: {fileID: 808744949}
   - component: {fileID: 808744948}
+  - component: {fileID: 808744951}
   m_Layer: 5
   m_Name: easy
   m_TagString: Untagged
@@ -620,7 +669,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 808744949}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 808744951}
+        m_MethodName: press
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &808744949
@@ -656,6 +716,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 808744946}
+--- !u!114 &808744951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808744946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17639fd484c563e48bc59cbfe4911a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: easy1
 --- !u!1 &1029092903
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +835,7 @@ GameObject:
   - component: {fileID: 1578816721}
   - component: {fileID: 1578816720}
   - component: {fileID: 1578816719}
+  - component: {fileID: 1578816723}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -833,6 +906,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1578816723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1578816718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e635a09f700912a419d94d0069a0ba5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Med: {fileID: 680753789}
+  Hard: {fileID: 16250367}
 --- !u!1 &1958378410
 GameObject:
   m_ObjectHideFlags: 0
