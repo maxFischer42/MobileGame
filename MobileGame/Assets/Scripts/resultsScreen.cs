@@ -26,10 +26,10 @@ public class resultsScreen : MonoBehaviour {
 		deathCounter = PlayerPrefs.GetInt ("Deaths");
 		killCounter = PlayerPrefs.GetInt ("Kills");
 
-		if (gemAmount == 10 && PlayerPrefs.GetInt ("Difficulty") == 0) {
+		if (gemAmount > 9 && PlayerPrefs.GetInt ("Difficulty") == 0) {
 			PlayerPrefs.SetInt ("Difficulty", 1);
 		}
-		if (gemAmount == 20 && PlayerPrefs.GetInt ("Difficulty") == 1) {
+		if (gemAmount > 16 && PlayerPrefs.GetInt ("Difficulty") == 1) {
 			PlayerPrefs.SetInt ("Difficulty", 2);
 		}
 
@@ -66,10 +66,10 @@ public class resultsScreen : MonoBehaviour {
 			text.text = "Gems Collected : " + gemAmount;
 			break;
 		case 1:
-			text.text = "Deaths : " + gemAmount;
+			text.text = "Deaths : " + deathCounter;
 			break;
 		case 2:
-			text.text = "Slimes that fell to your blade : " + gemAmount;
+			text.text = "Slimes that fell to your blade : " + killCounter;
 			break;
 		case 3:
 			text.text = "" + scoreTotal;

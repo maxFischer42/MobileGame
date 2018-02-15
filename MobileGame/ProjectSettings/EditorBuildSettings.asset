@@ -4,4 +4,37 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: c94b94bd39be8c84b8bd2389dd52edd5
+  - enabled: 1
+    path: Assets/Scenes/Results.unity
+    guid: c9d8fd84a1961ec41a139a1f1abbc314
+  - enabled: 1
+    path: Assets/Scenes/easy/easy1.unity
+    guid: d8e49ea63b7f8174abb09726eb9d4fd8
+  - enabled: 1
+    path: Assets/Scenes/easy/easy2.unity
+    guid: 067ec7ddf0bbf6046ae8b6016baa2431
+  - enabled: 1
+    path: Assets/Scenes/easy/easy3.unity
+    guid: f29aa9f5c4e661b4a8f1833bcf579765
+  - enabled: 1
+    path: Assets/Scenes/hard/DebugZone2.unity
+    guid: a3dabcdf7e223bb4483947674f1e484a
+  - enabled: 1
+    path: Assets/Scenes/hard/Level2.unity
+    guid: 8ba1448bd085c13498548b5a10ef939c
+  - enabled: 1
+    path: Assets/Scenes/hard/Level3.unity
+    guid: bfdfa7af77ab8694691d4c98318c0f3c
+  - enabled: 1
+    path: Assets/Scenes/medium/med1.unity
+    guid: b3337ffcbfaee694aa8f2f5e83b66393
+  - enabled: 1
+    path: Assets/Scenes/medium/med2.unity
+    guid: f3560f92e3d77554da44ccb3c962c27a
+  - enabled: 1
+    path: Assets/Scenes/medium/med3.unity
+    guid: 38bc0c7f0f4c7b1419d7ba2bd4c06a6c
