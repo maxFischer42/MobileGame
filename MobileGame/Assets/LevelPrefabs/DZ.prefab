@@ -80,3 +80,4 @@ MonoBehaviour:
   Spawn: {x: -4.5, y: 0}
   Part: {fileID: 0}
   par: {fileID: 0}
+  Dead: {fileID: 8300000, guid: b84bc232050849146978cd6e9f436603, type: 3}

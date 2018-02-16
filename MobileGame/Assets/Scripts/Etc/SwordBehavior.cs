@@ -12,6 +12,7 @@ public class SwordBehavior : MonoBehaviour {
 	public GameObject Right;
 	public GameObject Left;
 	public bool atkk;
+	public AudioClip Slash;
 	// Update is called once per frame
 	void Update ()
 	{
@@ -51,5 +52,6 @@ public class SwordBehavior : MonoBehaviour {
 	public void Attack()
 	{
 		atkk = true;
+		GetComponent<AudioSource> ().PlayOneShot (Slash);
 	}
 }

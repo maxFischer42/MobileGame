@@ -286,6 +286,7 @@ MonoBehaviour:
   Right: {fileID: 1867250060455726}
   Left: {fileID: 1413963976561828}
   atkk: 0
+  Slash: {fileID: 8300000, guid: 1ca790fc9bdc48e439b65c8387358c14, type: 3}
 --- !u!114 &114143010026110182
 MonoBehaviour:
   m_ObjectHideFlags: 1

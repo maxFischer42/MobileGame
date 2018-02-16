@@ -10219,6 +10219,11 @@ Prefab:
       propertyPath: attacklength
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 114039069143956668, guid: 053b01d1c561c4f4ab3e1c755ba96de7,
+        type: 2}
+      propertyPath: Slash
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ca790fc9bdc48e439b65c8387358c14, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 053b01d1c561c4f4ab3e1c755ba96de7, type: 2}
   m_IsPrefabParent: 0

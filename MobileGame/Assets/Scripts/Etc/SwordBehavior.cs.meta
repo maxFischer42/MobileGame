@@ -5,7 +5,12 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Plat: {instanceID: 0}
+  - Mot: {instanceID: 0}
+  - Right: {instanceID: 0}
+  - Left: {instanceID: 0}
+  - Slash: {fileID: 8300000, guid: 1ca790fc9bdc48e439b65c8387358c14, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -10,6 +10,7 @@ public class DeadZone : MonoBehaviour {
 	public Transform par;
 	bool active = false;
 	float timer;
+	public AudioClip Dead;
 
 	void Update()
 	{
@@ -48,6 +49,7 @@ public class DeadZone : MonoBehaviour {
 			int i = PlayerPrefs.GetInt ("Deaths");
 			i++;
 			PlayerPrefs.SetInt ("Deaths", i);
+			Coll.GetComponent<AudioSource> ().PlayOneShot (Dead);
 			Part.Play ();
 	}
 
