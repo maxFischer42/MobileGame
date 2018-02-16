@@ -24,7 +24,17 @@ public class PlatformerController : MonoBehaviour {
 	{
 		Vector3 dir = Vector3.zero;
 		dir.y = Rig.velocity.y;
-		dir.x = Joystick.Horizontal () * moveSpeed;
+		dir.x = Joystick.Horizontal ();
+		if (dir.x != 0) {
+			float dire = 1;
+			if (dir.x > 0) {
+				direction = true;
+				dir.x = moveSpeed;
+			} else if (dir.x < 0) {
+				direction = false;
+				dir.x = moveSpeed * -1;
+			}
+		}
 		//dir.y = Joystick.Vertical ();
 		if (dir.x > 0) {
 			direction = true;

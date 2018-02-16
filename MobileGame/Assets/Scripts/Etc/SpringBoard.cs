@@ -48,5 +48,6 @@ public class SpringBoard : MonoBehaviour {
 		colliding = false;
 		Spring.enabled = false;
 		Sprt.sprite = IdleSpring;
+		timer = 0;
 	}
 }

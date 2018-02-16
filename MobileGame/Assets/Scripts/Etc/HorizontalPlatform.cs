@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HorizontalPlatform : MonoBehaviour {
 
-	public float multiplier = -60f;
+	public float multiplier = -30f;
 
 
 
