@@ -8976,6 +8976,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Attack
       objectReference: {fileID: 0}
+    - target: {fileID: 114943091857691848, guid: 95137cdab4fcf1d4089aec800d7f2264,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 244199890}
+    - target: {fileID: 114943091857691848, guid: 95137cdab4fcf1d4089aec800d7f2264,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: JumpButton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95137cdab4fcf1d4089aec800d7f2264, type: 2}
   m_IsPrefabParent: 0
@@ -9776,6 +9786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7a92975acb8f148978049c2adee118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Aud: {fileID: 0}
 --- !u!212 &727951282
 SpriteRenderer:
   m_ObjectHideFlags: 0
