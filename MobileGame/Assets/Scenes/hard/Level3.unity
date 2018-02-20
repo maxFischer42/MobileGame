@@ -8046,22 +8046,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 4421820617892770, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917335186536852, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -3.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4352862342152100, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4071570825006284, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.87
-      objectReference: {fileID: 0}
+    - target: {fileID: 114697298431442060, guid: a6121b22e45dc0c468a1c07c6c41512a,
+        type: 2}
+      propertyPath: MainCam
+      value: 
+      objectReference: {fileID: 1373769384}
     - target: {fileID: 114697298431442060, guid: a6121b22e45dc0c468a1c07c6c41512a,
         type: 2}
       propertyPath: old
@@ -8072,79 +8061,9 @@ Prefab:
       propertyPath: can
       value: 
       objectReference: {fileID: 371291923}
-    - target: {fileID: 114697298431442060, guid: a6121b22e45dc0c468a1c07c6c41512a,
-        type: 2}
-      propertyPath: MainCam
-      value: 
-      objectReference: {fileID: 1373769384}
-    - target: {fileID: 61423641597950252, guid: a6121b22e45dc0c468a1c07c6c41512a,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.7652054
-      objectReference: {fileID: 0}
-    - target: {fileID: 61423641597950252, guid: a6121b22e45dc0c468a1c07c6c41512a,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 3.4968414
-      objectReference: {fileID: 0}
-    - target: {fileID: 61423641597950252, guid: a6121b22e45dc0c468a1c07c6c41512a,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: -1.5547333
-      objectReference: {fileID: 0}
-    - target: {fileID: 61423641597950252, guid: a6121b22e45dc0c468a1c07c6c41512a,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 6.0074177
-      objectReference: {fileID: 0}
-    - target: {fileID: 1733595056639456, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4668155075439040, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 5.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 4668155075439040, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588756419959812, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 10.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588756419959812, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 1401321790916212, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
-      propertyPath: m_TagString
-      value: Bucket
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 61265773734654190, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6121b22e45dc0c468a1c07c6c41512a, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &966559391 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1401321790916212, guid: a6121b22e45dc0c468a1c07c6c41512a,
-    type: 2}
-  m_PrefabInternal: {fileID: 966559390}
---- !u!58 &966559392
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 966559391}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0000038146973, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.9599999
 --- !u!1001 &992346946
 Prefab:
   m_ObjectHideFlags: 0
