@@ -33,14 +33,12 @@ public class SpringBoard : MonoBehaviour {
 			colliding = true;
 			Spring.enabled = true;
 			colliding = true;
-		} else if(Coll.gameObject.layer != 9){
+		} else if (Coll.gameObject.layer != 9) {
 			Rig = Coll.gameObject.GetComponent<Rigidbody2D> ();
 			colliding = true;
 			Spring.enabled = true;
 			colliding = true;
 		}
-			
-		
 	}
 
 	void OnTriggerExit2D(Collider2D Coll)
