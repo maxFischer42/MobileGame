@@ -10,7 +10,7 @@ public class Hurt : MonoBehaviour {
 	public int HP;
 	float timer = 0;
 	bool invinsible = false;
-
+	int a;
 
 	// Use this for initialization
 	void Start () {
@@ -22,9 +22,7 @@ public class Hurt : MonoBehaviour {
 	{
 		timer += Time.deltaTime;
 		if (isPlayer != true && HP <= 0) {
-			int i = PlayerPrefs.GetInt ("Kills");
-			i++;
-			PlayerPrefs.SetInt ("Kills", i);
+			
 			Destroy (gameObject, timeUntilDestroy);
 		} else if(isPlayer && HP <= 0) {
 			GameObject.Find ("DZ").gameObject.GetComponent<DeadZone> ().kill ();
@@ -42,10 +40,19 @@ public class Hurt : MonoBehaviour {
 			invinsible = true;
 			switch (isPlayer) {
 			case true:
+
+				if(GameObject.Find("SBL").gameObject.activeSelf == false &&
+					GameObject.Find("SBR").gameObject.activeSelf == false){
 				gameObject.GetComponent<PlayerHealthHandler> ().hP -= 1;
+				}
 				break;
 			case false:
 				HP -= 1;
+				if (HP == 0 || HP <= 0) {
+					int i = PlayerPrefs.GetInt ("Kills");
+					i++;
+					PlayerPrefs.SetInt ("Kills", i);
+				}
 				break;
 			}
 		}
@@ -63,7 +70,9 @@ public class Hurt : MonoBehaviour {
 			invinsible = true;
 			switch (isPlayer) {
 			case true:
-				gameObject.GetComponent<PlayerHealthHandler> ().hP -= 1;
+				if(gameObject.GetComponent<SwordBehavior>().attacking != true){
+					gameObject.GetComponent<PlayerHealthHandler> ().hP -= 1;
+				}
 				break;
 			case false:
 				HP -= 1;

@@ -42,6 +42,10 @@ public class PlatformerController : MonoBehaviour {
 			direction = false;
 		}
 
+		if (dir.y < -25) {
+			dir = new Vector2 (dir.x, -25);
+		}
+
 		if (jump) {
 			
 			if (Rig.gravityScale > 0) {

@@ -152,7 +152,7 @@ Transform:
   m_Children:
   - {fileID: 460641384}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &186596067
 Prefab:
@@ -16190,12 +16190,12 @@ Prefab:
         type: 2}
       propertyPath: Containers.Array.data[0]
       value: 
-      objectReference: {fileID: 1600748660}
+      objectReference: {fileID: 1600748659}
     - target: {fileID: 114522791399785512, guid: 053b01d1c561c4f4ab3e1c755ba96de7,
         type: 2}
       propertyPath: Containers.Array.data[1]
       value: 
-      objectReference: {fileID: 1600748659}
+      objectReference: {fileID: 1600748660}
     - target: {fileID: 114343000611776474, guid: 053b01d1c561c4f4ab3e1c755ba96de7,
         type: 2}
       propertyPath: Joystick
