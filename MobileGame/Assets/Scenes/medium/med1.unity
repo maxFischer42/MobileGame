@@ -152,7 +152,7 @@ Transform:
   m_Children:
   - {fileID: 460641384}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &186596067
 Prefab:
@@ -16953,6 +16953,11 @@ Prefab:
         type: 2}
       propertyPath: m_Constraints
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114153285349684004, guid: b7b279a461108214b8a06e926e28e146,
+        type: 2}
+      propertyPath: directionSpeed.y
+      value: 1200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7b279a461108214b8a06e926e28e146, type: 2}

@@ -41,8 +41,7 @@ public class Hurt : MonoBehaviour {
 			switch (isPlayer) {
 			case true:
 
-				if(GameObject.Find("SBL").gameObject.activeSelf == false &&
-					GameObject.Find("SBR").gameObject.activeSelf == false){
+				if(gameObject.GetComponent<SwordBehavior>().attacking != true){
 				gameObject.GetComponent<PlayerHealthHandler> ().hP -= 1;
 				}
 				break;
