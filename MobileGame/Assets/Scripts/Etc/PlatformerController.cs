@@ -45,7 +45,7 @@ public class PlatformerController : MonoBehaviour {
 		}
 
 		if (dir.y < -5) {
-			dir = new Vector2 (dir.x, -5);
+			dir = new Vector2 (dir.x, -10);
 		}
 
 		if (jump) {
