@@ -350,6 +350,7 @@ MonoBehaviour:
   jump: 0
   moveSpeed: 5
   aaa: {x: 0, y: 0}
+  Aud: {fileID: 8300000, guid: 215b40f520589544ebcb858b7b15648b, type: 3}
 --- !u!114 &114522791399785512
 MonoBehaviour:
   m_ObjectHideFlags: 1

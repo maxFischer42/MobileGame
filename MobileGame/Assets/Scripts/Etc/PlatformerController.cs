@@ -13,6 +13,8 @@ public class PlatformerController : MonoBehaviour {
 	public bool jump;
 	public float moveSpeed = 5;
 	public Vector2 aaa;
+	public AudioClip Aud;
+
 
 	// Use this for initialization
 	void Start () {
@@ -42,11 +44,12 @@ public class PlatformerController : MonoBehaviour {
 			direction = false;
 		}
 
-		if (dir.y < -25) {
-			dir = new Vector2 (dir.x, -25);
+		if (dir.y < -5) {
+			dir = new Vector2 (dir.x, -5);
 		}
 
 		if (jump) {
+			GetComponent<AudioSource> ().PlayOneShot (Aud);
 			
 			if (Rig.gravityScale > 0) {
 				Rig.AddForce (new Vector2 (0, jumpspeed));
