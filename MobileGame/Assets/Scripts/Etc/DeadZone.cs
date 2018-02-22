@@ -50,6 +50,7 @@ public class DeadZone : MonoBehaviour {
 			i++;
 			PlayerPrefs.SetInt ("Deaths", i);
 			Coll.GetComponent<AudioSource> ().PlayOneShot (Dead);
+			Part.transform.SetPositionAndRotation (par.position, Quaternion.identity);
 			Part.Stop ();
 			Part.Play ();
 	}
