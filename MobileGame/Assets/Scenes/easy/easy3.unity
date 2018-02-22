@@ -278,11 +278,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4607802540374362, guid: b7b279a461108214b8a06e926e28e146, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.5000001
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4607802540374362, guid: b7b279a461108214b8a06e926e28e146, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.5000001
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4607802540374362, guid: b7b279a461108214b8a06e926e28e146, type: 2}
       propertyPath: m_LocalScale.z
@@ -89447,11 +89447,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4607802540374362, guid: b7b279a461108214b8a06e926e28e146, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.5000001
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4607802540374362, guid: b7b279a461108214b8a06e926e28e146, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.5000001
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4607802540374362, guid: b7b279a461108214b8a06e926e28e146, type: 2}
       propertyPath: m_LocalScale.z
@@ -129494,11 +129494,6 @@ Prefab:
     - target: {fileID: 1663179977138708, guid: b7b279a461108214b8a06e926e28e146, type: 2}
       propertyPath: m_Name
       value: SpringBoard (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 50657451238246520, guid: b7b279a461108214b8a06e926e28e146,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4607802540374362, guid: b7b279a461108214b8a06e926e28e146, type: 2}
       propertyPath: m_LocalScale.x
